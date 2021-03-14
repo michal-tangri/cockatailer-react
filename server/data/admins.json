@@ -1,0 +1,12 @@
+[
+    {
+        "username": "admin",
+        "password": "$2b$10$mM8/zRi7oHMMGD/3TNQsKeWUd/c8ZiVR18iWgc5UpDfhPACKJGMbi",
+        "token": "62706956ffb129f6008722eee0fd457f696871b9fcadf9e329c91f5c81853413"
+    },
+    {
+        "username": "cooleradmin",
+        "password": "$2b$10$ROdAMWzMc92G/xUUzaonUeYRsAGurM5HHeQmj4/YaEkwuQOWKDY6G",
+        "token": "ace26c3668c9e38c64c66fffa1446226648892154aa6bef9d079d035716d2b71"
+    }
+]

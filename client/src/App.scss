@@ -1,0 +1,139 @@
+/* Colors */
+$light-pink: #C3073F;
+$dark-pink: #950740;
+$redish: #6F2232;
+$light-grey: #4E4E50;
+$dark-grey: #1A1A1D;
+
+/* Mixins */
+@mixin reset-a-propeties {
+    color: white;
+    text-decoration: none!important;
+}
+
+@mixin photo-zoom {
+    width: 100%;
+    object-fit: cover;
+}
+
+@mixin darker-on-hover {
+    filter: brightness(90%);
+}
+
+@mixin common-button {
+    color: white;
+    background-color: $light-pink;
+}
+
+/* Common classes */
+
+.common-button {
+    @include common-button();
+    padding: 12px 40px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.common-button:hover {
+    @include common-button();
+    @include darker-on-hover();
+}
+
+table {
+    color: #ffffff!important;
+}
+/* Try to redefine properties from all links */
+
+body a {
+    @include reset-a-propeties;
+}
+  
+body a:hover {
+    @include reset-a-propeties; 
+    cursor:pointer;  
+}
+
+/* Navigation */
+.nav {
+    width: 100%;
+    background-color: $dark-pink;
+    margin-bottom: 20px!important;
+    padding: 6px;
+}
+
+.nav img {
+    width: 16%;
+    margin-left: 10px;
+}
+
+.nav li {
+    padding: 2px 2px;
+    margin-left: 2px;
+}
+
+.nav li:hover {
+    background-color: $light-pink;
+    border-radius: 25px
+}
+
+/* Cocktail cards */
+div[class^="card-body"] img {
+    @include photo-zoom();
+    height: 5vw;
+}
+
+.cocktail-card {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.cocktail-card > div[class^="card"] {
+    background-color: $dark-pink;
+}
+
+.cocktail-card:hover {
+    @include darker-on-hover();
+}
+
+/* Cocktail page */
+
+.cocktail-page {
+    color: white;
+}
+
+.cocktail-page-photo img {
+    @include photo-zoom();
+    height: 30rem;
+    
+}
+
+.cocktail-page-btns {
+    margin-top: 50px;
+}
+
+/* Search engine style */
+.search-engine {
+    padding: 8px 8px 8px 20px;
+    border-radius: 40px!important;
+}
+
+/* Login page */
+#login-form {
+    padding: 80px 40px;
+    background-color: $light-grey;
+    border-radius: 20px;
+}
+
+#login-form button {
+    border: none;
+    width: 100%;
+    padding: 6px!important;
+}
+
+/* Comments */
+.comment-card {
+    text-align: left;
+    border:none!important;
+    border-radius: 30px!important;
+    background-color: $light-grey!important;
+}
